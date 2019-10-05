@@ -15,5 +15,5 @@
   (let [base-values   [0 1]
         missing-elems (range 2 (inc elem))]
     (->> missing-elems
-         (reduce fib+previous base-values)
+         (reduce fib-from-previous base-values)
          (#(get % elem)))))
